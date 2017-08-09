@@ -98,6 +98,7 @@ void loop() {
       s = ",C," + String(temp)  + ",C,TEMP";
       s += ",P," + String(press / 1000.0, 5) + ",B,BARO"; // OpenCPN doesn't seem to grok Pascal (unit "P"), only Bar ("B")
       nmea_send("XDR", s);
+      // These NMEA 0183 sentences are deprecated:
       //nmea_send("MTA", "," + String(temp) + ",C");
       //nmea_send("MMB", ",0.0,I,1.5,B");
     } else {
