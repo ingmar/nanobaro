@@ -14,8 +14,12 @@ Nanobaro will also output human readable `TXT` sentences at startup and if anyth
 
 ## Hardware
 
-The hardware is very simple. It's a BMP180 chip connected with four wires to a SPI clock/data pair as well as ground and 5V on the Arduino. More information and photos can be found on [my related blog post](TODO: blog post url).
+The hardware is very simple. It's a BMP180 chip connected with four wires to a I²C clock/data pair as well as ground and 5V on the Arduino. More information and photos can be found on [my related blog post](https://sdfjkl.org/blog/2017-08-09-nanobaro/).
 
 ## Arduino Nano Firmware
 
-Program `nanobar.ino` onto your Nano. You will need the **Wire** library included with the Arduino package as well as the [SFE_BMP180 library from Sparkfun](https://github.com/sparkfun/BMP180_Breakout).
+Program `nanobar.ino` onto your Nano. You will need the **Wire** (I²C) library included with the Arduino package as well as the [SFE_BMP180 library from Sparkfun](https://github.com/sparkfun/BMP180_Breakout).
+
+## Software
+
+There is no other software included. I'm using OpenCPN's dashboard plugin, with a separate dashboard containing only the **Barometric history** widget. You can either directly connect to the Nano's USB-serial device with OpenCPN, or via a NMEA multiplexer such as [kplex](http://www.stripydog.com/kplex/), which lets you easily make the data available to multiple devices on a wireless or wired network.
