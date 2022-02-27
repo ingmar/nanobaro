@@ -23,3 +23,7 @@ Program `nanobar.ino` onto your Nano. You will need the **Wire** (I²C) library 
 ## Software
 
 There is no other software included. I'm using OpenCPN's dashboard plugin, with a separate dashboard containing only the **Barometric history** widget. You can either directly connect to the Nano's USB-serial device with OpenCPN, or via a NMEA multiplexer such as [kplex](http://www.stripydog.com/kplex/), which lets you easily make the data available to multiple devices on a wireless or wired network.
+
+## Related Projects
+
+There is a BME280 version: https://github.com/roaxth/NanoBaro-bme280-Baro-Temp-Humidy-for-OpenCPN
