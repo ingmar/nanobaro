@@ -26,4 +26,5 @@ There is no other software included. I'm using OpenCPN's dashboard plugin, with 
 
 ## Related Projects
 
-There is a BME280 version: https://github.com/roaxth/NanoBaro-bme280-Baro-Temp-Humidy-for-OpenCPN
+- BMP280 version: https://github.com/dolabriform/nanobaro_bmp280
+- BME280 version: https://github.com/roaxth/NanoBaro-bme280-Baro-Temp-Humidy-for-OpenCPN
